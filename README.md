@@ -1,4 +1,4 @@
-# Simple webapp
+# Python3 webapp
 
 This is a very basic Python webapp for use as an example in DevOps deployment specifications.
 
