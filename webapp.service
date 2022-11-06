@@ -1,0 +1,16 @@
+[Unit]
+Description=Simple Python webapp
+After=network-online.target
+
+[Service]
+Type=simple
+User=johnz
+WorkingDirectory=/opt/webapp
+ExecStart=/usr/bin/python3 -u /opt/webapp/server.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=webapp
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
